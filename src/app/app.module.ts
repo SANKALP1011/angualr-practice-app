@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
+import { MessageComponentComponent } from './message-component/message-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
-    HeroDetailsComponent
+    HeroDetailsComponent,
+    MessageComponentComponent
   ],
   imports: [
     BrowserModule,
