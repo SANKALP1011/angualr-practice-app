@@ -16,4 +16,9 @@ export class HeroServicesService {
     this.MessageService.add("hero static data fetched")
     return heros;
   }
+  getHero(id:number): Observable<hero>{
+    const hero = Hero.find(data => data.id===id)!
+    this.MessageService.add(`hero id is ${id}`)
+    return of(hero)
+  }
 }

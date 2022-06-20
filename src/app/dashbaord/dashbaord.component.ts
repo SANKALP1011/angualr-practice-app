@@ -14,11 +14,12 @@ export class DashbaordComponent implements OnInit {
   constructor(private heroService: HeroServicesService) { }
 
   ngOnInit(): void {
+    this.getTopHero()
   }
 
   getTopHero(): void{
     this.heroService.getHeroList()
-    .subscribe((data=> this.Heros = data))
+    .subscribe((data=> this.Heros = data.slice(0,1)))
   }
 
 }

@@ -1,3 +1,3 @@
 <div>
-    <a *ngFor="let heros of Heros">{{heros.name}}</a>
+    <a *ngFor="let heros of Heros" routerLink="/details/{{heros.id}}">{{heros.name}}</a>
 </div>
